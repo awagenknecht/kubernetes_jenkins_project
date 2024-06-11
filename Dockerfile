@@ -9,4 +9,4 @@ RUN unzip adriya.zip
 RUN cp -rvf adriya/* .
 RUN rm -rf adriya adriya.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80 443
+EXPOSE 80
