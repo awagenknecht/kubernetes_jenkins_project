@@ -3,10 +3,10 @@ LABEL org.opencontainers.image.authors="57978199+awagenknecht@users.noreply.gith
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page216/adriya.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip adriya.zip
-RUN cp -rvf adriya/* .
-RUN rm -rf adriya adriya.zip
+RUN unzip photogenic.zip
+RUN cp -rvf photogenic/* .
+RUN rm -rf photogenic photogenic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
